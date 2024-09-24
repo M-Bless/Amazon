@@ -105,7 +105,7 @@ cartSummaryHTML+=
 document.querySelector('.js-order-summary')
 .innerHTML = cartSummaryHTML;
 
-document.querySelector('.js-delete-link')
+document.querySelectorAll('.js-delete-link')
 .forEach((link)=>{
   link.addEventListener('click',()=>{
     const productId=link.dataset.productId;
